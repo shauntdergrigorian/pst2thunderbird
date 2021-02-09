@@ -7,9 +7,9 @@ import sys,os,shutil
 
 def checkFolder(folder):
     a = 1
-    if os.path.isdir(folder):				# Does out exist?
-        while os.path.isdir(folder+str(a)):		# While out+a exists, do...
-            a +=1					# increase a by 1
+    if os.path.isdir(folder):				
+        while os.path.isdir(folder+str(a)):		
+            a +=1					
         else:
             return(folder+str(a))
     else:
